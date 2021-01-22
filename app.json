@@ -1,0 +1,12 @@
+{
+  "name": "TFMH",
+  "displayName": "TFMH",
+  "expo": {
+    "name": "TFMH",
+    "slug": "TFMH",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
