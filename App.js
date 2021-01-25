@@ -11,7 +11,19 @@ export default function App() {
         <SelectButton gradcolour='a' title='   Something  ' />
       </View>  
       <View>
-        <SelectButton gradcolour='a' title='Something Else' />
+        <SelectButton gradcolour='a' title='   Something  ' />
+      </View>
+      <View>
+        <SelectButton gradcolour='a' title='   Something  ' />
+      </View>
+      <View>
+        <SelectButton gradcolour='a' title='   Something  ' />
+      </View>
+      <View>
+        <SelectButton gradcolour='a' title='   Something  ' />
+      </View>
+      <View>
+        <SelectButton gradcolour='a' title='   Something  ' />
       </View> 
       <StatusBar style="auto" />
     </View>
@@ -26,6 +38,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     flexWrap: 'wrap',
-    alignContent: 'stretch',
+    alignContent:  'center',
   },
 });
