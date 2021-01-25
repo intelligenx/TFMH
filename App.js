@@ -7,8 +7,12 @@ import SelectButton from './Components/SelectButton.js';
 export default function App() {
   return (
     <View style={styles.container}>
-       <SelectButton gradcolour='a' title='Something' />
+      <View > 
+        <SelectButton gradcolour='a' title='   Something  ' />
+      </View>  
+      <View>
         <SelectButton gradcolour='a' title='Something Else' />
+      </View> 
       <StatusBar style="auto" />
     </View>
   );
@@ -20,8 +24,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     backgroundColor: '#fff',
     alignItems: 'center',
-    alignContent: 'stretch',
     justifyContent: 'center',
     flexWrap: 'wrap',
+    alignContent: 'stretch',
   },
 });
