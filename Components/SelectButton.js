@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     container : {
         backgroundColor: 'cyan',
         padding: 40,
-        borderRadius: '5px',
+        borderRadius: '8px',
     },
     button1: {
         backgroundColor: 'red',
