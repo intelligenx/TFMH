@@ -3,8 +3,8 @@ import {View, Text, Button,Linking, Alert, StyleSheet} from 'react-native';
 
 export default function SelectButton(props) {
     return(
-        <View >
-            <Text style={styles.container}  onPress={ () => Alert.alert('Nothing happened')}>
+        <View style={styles.container} >
+            <Text style={styles.button1}  onPress={ () => Alert.alert('Nothing happened')}>
                  {props.title}
             </Text>
         </View>
@@ -12,14 +12,14 @@ export default function SelectButton(props) {
 }
 
 const styles = StyleSheet.create({
-    container : {
-        backgroundColor: 'cyan',
-        padding: 40,
-        borderRadius: '8px',
+    container : {   
+        
     },
     button1: {
-        backgroundColor: 'red',
-        padding: 5,
+        backgroundColor: 'cyan',
+        paddingTop  : 20,
+        borderRadius: 8,
+        margin : 5,
     },
     button2: {
         backgroundColor: 'black',
