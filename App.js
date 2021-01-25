@@ -7,22 +7,22 @@ import SelectButton from './Components/SelectButton.js';
 export default function App() {
   return (
     <View style={styles.container}>
-      <View > 
-        <SelectButton gradcolour='a' title='   Something  ' />
-      </View>  
-      <View>
+      <View style={{alignSelf: 'flex-start'}}> 
         <SelectButton gradcolour='a' title='   Something  ' />
       </View>
-      <View>
+      <View style={{alignSelf: 'flex-end'}}>
+        <SelectButton gradcolour='a' title='   Something  ' />
+      </View >
+      <View style={{alignSelf: 'flex-start'}}>
         <SelectButton gradcolour='a' title='   Something  ' />
       </View>
-      <View>
+      <View style={{alignSelf: 'flex-end'}}>
         <SelectButton gradcolour='a' title='   Something  ' />
       </View>
-      <View>
+      <View style={{alignSelf: 'flex-start'}}>
         <SelectButton gradcolour='a' title='   Something  ' />
       </View>
-      <View>
+      <View style={{alignSelf: 'flex-end'}}>
         <SelectButton gradcolour='a' title='   Something  ' />
       </View> 
       <StatusBar style="auto" />
@@ -33,11 +33,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'row',
+    flexDirection: 'column',
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexWrap: 'wrap',
-    alignContent:  'center',
+    justifyContent:  'center',
   },
 });

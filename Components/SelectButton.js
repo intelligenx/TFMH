@@ -6,6 +6,7 @@ export default function SelectButton(props) {
         <View style={styles.container} >
             <Text style={styles.button1}  onPress={ () => Alert.alert('Nothing happened')}>
                  {props.title}
+                 
             </Text>
         </View>
     );
@@ -17,10 +18,11 @@ const styles = StyleSheet.create({
     },
     button1: {
         backgroundColor: 'cyan',
-        paddingHorizontal : 37,
-        paddingVertical: 50,
+        paddingHorizontal : 40,
+        paddingVertical: 100,
         borderRadius: 8,
-        margin : 5,
+        marginHorizontal : 15,
+        marginVertical: 0,
     },
     button2: {
         backgroundColor: 'black',
