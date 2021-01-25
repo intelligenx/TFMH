@@ -4,11 +4,13 @@ import { StyleSheet, Text, View, SafeAreaView, ScrollView, _ScrollView } from 'r
 import Constants from 'expo-constants';
 
 import ButtonGroup from './Components/ButtonGroup';
+import Header from './Components/Header';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.scrollView}>
+        <Header />
         <ButtonGroup />
         <View><StatusBar style="auto" /></View>
       </ScrollView>

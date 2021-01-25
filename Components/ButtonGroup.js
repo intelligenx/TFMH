@@ -35,5 +35,6 @@ const styles = StyleSheet.create({
       flexDirection: 'column',
       backgroundColor: '#fff',
       justifyContent:  'center',
+      marginTop: -20,
     },
 });
