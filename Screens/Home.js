@@ -5,12 +5,12 @@ import Constants from 'expo-constants';
 import ButtonGroup from '../Components/ButtonGroup';
 import Header from '../Components/Header';
 
-export default function Home() {
+export default function Home(props) {
     return(
         <SafeAreaView style={styles.container}>
             <ScrollView style={styles.scrollView}>
                 <Header />
-                <ButtonGroup />
+                <ButtonGroup navigation={props.navigation}/>
             </ScrollView>
         </SafeAreaView>
   

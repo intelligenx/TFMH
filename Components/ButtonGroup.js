@@ -3,10 +3,15 @@ import { StyleSheet, Text, View, } from 'react-native';
 
 import SelectButton from './SelectButton.js';
 
-export default function ButtonGroup() {
+export default function ButtonGroup({navigation}) {
+
+    const pressHandler = () => {
+      navigation.navigate(Basic_Checkup);
+    }
+
     return(
         <View style={styles.container}>
-          <View style={{alignSelf: 'flex-start'}}> 
+          <View style={{alignSelf: 'flex-start'}} onPress={ () => {pressHandler()}}> 
             <SelectButton gradcolour='a' title='   Something  ' />
           </View>
           <View style={{alignSelf: 'flex-end'}}>

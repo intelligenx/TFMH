@@ -12,7 +12,7 @@ export default function HomeStack() {
         <NavigationContainer>
             <Stack.Navigator>
                 <Stack.Screen name='Tech For Metal Heath' component={Home} />
-                <Stack.Screen name='Basic Checkup' component={BasicCheckup} />
+                <Stack.Screen name='Basic_Checkup' component={BasicCheckup} />
             </Stack.Navigator>
         </NavigationContainer>
     );
