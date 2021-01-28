@@ -4,7 +4,7 @@ import {View, Text, Button,Linking, Alert, StyleSheet} from 'react-native';
 export default function SelectButton(props) {
     return(
         <View style={styles.container} >
-            <Text style={styles.button1}  onPress={ () => Alert.alert('Nothing happened')}>
+            <Text style={styles.button1}>
                  {props.title}
                  
             </Text>
