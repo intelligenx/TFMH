@@ -2,6 +2,21 @@ import React from 'react';
 import {View, Text, Button,Linking, Alert, StyleSheet} from 'react-native';
 
 export default function SelectButton(props) {
+    const pressHandler = () => {
+        if (props.title == "Basic Checkup"){
+            props.navigation.navigate(Basic_Checkup);
+        } else if (props.title == "Basic Checkup"){
+            props.navigation.navigate(Basic_Checkup);
+        } else if (props.title == "Intermediate Checkup"){
+            props.navigation.navigate(Basic_Checkup);
+        } else if (props.title == "Basic Checkup"){
+            props.navigation.navigate(Basic_Checkup);
+        } else if (props.title == "Basic Checkup"){
+            props.navigation.navigate(Basic_Checkup);
+        } else if (props.title == "Basic Checkup"){
+            props.navigation.navigate(Basic_Checkup);
+        }
+      }
     return(
         <View style={styles.container} >
             <Text style={styles.button1}>

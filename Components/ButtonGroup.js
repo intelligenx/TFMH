@@ -5,14 +5,10 @@ import SelectButton from './SelectButton.js';
 
 export default function ButtonGroup({navigation}) {
 
-    const pressHandler = () => {
-      navigation.navigate(Basic_Checkup);
-    }
-
     return(
         <View style={styles.container}>
           <View style={{alignSelf: 'flex-start'}} onPress={ () => {pressHandler()}}> 
-            <SelectButton gradcolour='a' title='   Something  ' />
+            <SelectButton gradcolour='a' title='   Something  ' navigation={navigation}/>
           </View>
           <View style={{alignSelf: 'flex-end'}}>
             <SelectButton gradcolour='a' title='   Something  ' />
