@@ -13,10 +13,10 @@ export default function ButtonGroup(props) {
             <SelectButton gradcolour='a' title='Basic Checkup' navigation={props.navigation}/>
           </View>
           <View style={{alignSelf: 'flex-end'}}>
-            <SelectButton gradcolour='a' title='   Something  ' />
+            <SelectButton gradcolour='a' title='Intermediate Checkup' navigation={props.navigation} />
           </View >
           <View style={{alignSelf: 'flex-start'}}>
-            <SelectButton gradcolour='a' title='   Something  ' />
+            <SelectButton gradcolour='a' title='Advanced Checkup' navigation={props.navigation}/>
           </View>
           <View style={{alignSelf: 'flex-end'}}>
             <SelectButton gradcolour='a' title='   Something  ' />
