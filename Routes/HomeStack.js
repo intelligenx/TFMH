@@ -11,13 +11,13 @@ const Stack = createStackNavigator();
 
 export default function HomeStack() {
     return(
-        <NavigationContainer>
+       
             <Stack.Navigator>
                 <Stack.Screen name='Tech For Metal Heath' component={Home} />
                 <Stack.Screen name='Basic Checkup' component={BasicCheckup} />
                 <Stack.Screen name='Intermediate Checkup' component={IntermediateCheck} />
                 <Stack.Screen name='Advanced Checkup' component={AdvancedCheck} />
             </Stack.Navigator>
-        </NavigationContainer>
+        
     );
 }

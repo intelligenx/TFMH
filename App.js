@@ -3,11 +3,13 @@ import React from 'react';
 import { StyleSheet, View} from 'react-native';
 
 import HomeStack from './Routes/HomeStack';
+import HomeDrawer from './Routes/HomeDrawer';
 
 export default function App() {
   return (
     <>
-      <HomeStack />
+     
+      <HomeDrawer />
       <View><StatusBar style="auto" /></View>
     </>  
   );
