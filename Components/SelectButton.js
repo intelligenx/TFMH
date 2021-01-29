@@ -1,5 +1,6 @@
 import React from 'react';
 import {View, Text, Button,Linking, Alert, StyleSheet} from 'react-native';
+import {LinearGradient} from 'expo-linear-gradient'
 
 export default function SelectButton(props) {
     const pressHandler = () => {
@@ -19,20 +20,22 @@ export default function SelectButton(props) {
       }
     return(
         <View style={styles.container} >
+            <LinearGradient colors={['orange', 'purple']} style={styles.container}>
             <Text style={styles.button1}>
                  {props.title}
                  
             </Text>
+            </LinearGradient>
         </View>
     );
 }
 
 const styles = StyleSheet.create({
-    container : {   
-        
+    container : { 
+            borderRadius: 10,
     },
+
     button1: {
-        backgroundColor: 'cyan',
         paddingHorizontal : 40,
         paddingVertical: 100,
         borderRadius: 8,
