@@ -20,7 +20,7 @@ export default function SelectButton(props) {
       }
     return(
         <View style={styles.container} >
-            <LinearGradient colors={['orange', 'purple']} style={styles.container}>
+            <LinearGradient colors={['pink', 'cyan']} start={{x:0,y:1}} end={{x:1,y:0}} style={styles.container}>
             <Text style={styles.button1}>
                  {props.title}
                  
@@ -41,6 +41,8 @@ const styles = StyleSheet.create({
         borderRadius: 8,
         marginHorizontal : 15,
         marginVertical: 0,
+        fontSize: 18,
+        fontFamily:"sans-serif-medium"
     },
     button2: {
         backgroundColor: 'black',
