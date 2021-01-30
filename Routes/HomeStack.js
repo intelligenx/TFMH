@@ -6,14 +6,23 @@ import Home from '../Screens/Home';
 import BasicCheckup from '../Screens/BasicCheckup'
 import IntermediateCheck from '../Screens/IntermediateCheck';
 import AdvancedCheck from '../Screens/AdvancedCheck';
+import NavHead from '../Components/NavHead';
 
 const Stack = createStackNavigator();
 
-export default function HomeStack() {
+export default function HomeStack({navigation}) {
     return(
        
             <Stack.Navigator>
-                <Stack.Screen name='Tech For Metal Heath' component={Home} />
+                <Stack.Screen 
+                    name='Tech For Metal Heath' 
+                    component={Home} 
+                    options={{
+                        headerTitle: ()=> {
+                        return(<NavHead navigation={navigation}/>);
+                        }
+                    }} 
+                />
                 <Stack.Screen name='Basic Checkup' component={BasicCheckup} />
                 <Stack.Screen name='Intermediate Checkup' component={IntermediateCheck} />
                 <Stack.Screen name='Advanced Checkup' component={AdvancedCheck} />
